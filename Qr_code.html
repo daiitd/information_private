@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.html"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>my qr</title>
+</head>
+<body>
+    <head>
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+    <div id = "qrcode"></div>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), 
+        "https://www.facebook.com/nguyen.phuong.ai.266925")
+
+    </script>
+</body>
+</html>
