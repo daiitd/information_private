@@ -71,6 +71,7 @@
       text-align: center;
       transition: transform 0.3s, background 0.3s;
       overflow: hidden;
+      cursor: pointer;
     }
 
     .social-links a.facebook { background: #1877f2; }
@@ -107,7 +108,9 @@
     <h2>Nguyễn Phương Đại</h2>
 
     <div class="social-links">
-      <a href="https://www.facebook.com/nguyen.phuong.ai.266925" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <!-- Facebook có fallback -->
+      <a onclick="openFacebook()" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      
       <a href="https://www.instagram.com/nguy.enphuongdai/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@daipro1245" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
       <!-- Zalo -->
@@ -120,6 +123,18 @@
       <a href="mailto:phuongnguyendai8@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
+
+  <script>
+    function openFacebook() {
+      // Dùng ID Facebook thật của bạn ở đây
+      window.location.href = "fb://profile/100071108987530";
+
+      // Sau 2 giây nếu app không mở, fallback về web
+      setTimeout(function() {
+        window.location.href = "https://www.facebook.com/nguyen.phuong.ai.266925";
+      }, 2000);
+    }
+  </script>
 
 </body>
 </html>
