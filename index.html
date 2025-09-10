@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang cá nhân</title>
-  <!-- FontAwesome để lấy icon FB, IG, TikTok -->
+  <!-- FontAwesome để lấy icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -16,8 +16,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
-      /* Gradient nhiều màu pastel */
       background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
       background-size: 400% 400%;
       animation: gradientMove 12s ease infinite;
@@ -57,10 +55,6 @@
       color: #333;
     }
 
-    p {
-      color: #555;
-    }
-
     .social-links {
       margin-top: 20px;
     }
@@ -68,7 +62,7 @@
     .social-links a {
       display: inline-block;
       margin: 10px;
-      font-size: 28px;
+      font-size: 26px;
       color: #fff;
       width: 55px;
       height: 55px;
@@ -79,11 +73,12 @@
       overflow: hidden;
     }
 
-    /* Màu riêng cho từng mạng xã hội */
     .social-links a.facebook { background: #1877f2; }
     .social-links a.instagram { background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #4f5bd5); }
     .social-links a.tiktok { background: #000; }
     .social-links a.zalo { background: #0068ff; }
+    .social-links a.phone { background: #28a745; }
+    .social-links a.gmail { background: #d93025; }
 
     .social-links a img {
       width: 28px;
@@ -110,16 +105,19 @@
   <div class="container">
     <img src="anhquachinhsua.png" alt="Avatar" class="avatar">
     <h2>Nguyễn Phương Đại</h2>
-    <p></p>
 
     <div class="social-links">
       <a href="https://www.facebook.com/nguyen.phuong.ai.266925" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.instagram.com/nguy.enphuongdai/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@daipro1245" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
-      <!-- Thêm Zalo -->
+      <!-- Zalo -->
       <a href="https://zalo.me/0776257464" target="_blank" class="zalo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
       </a>
+      <!-- Gọi điện -->
+      <a href="tel:0776257464" class="phone"><i class="fas fa-phone"></i></a>
+      <!-- Gmail -->
+      <a href="mailto:phuongnguyendai8@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
